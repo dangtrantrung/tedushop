@@ -1,2 +1,2 @@
 # tedushop
-Trainning project
+Training project
