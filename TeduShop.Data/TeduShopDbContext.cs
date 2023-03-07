@@ -12,7 +12,7 @@ namespace TeduShop.Data
 
     {
         public TeduShopDbContext()
-            : base("TeduShopConnection")
+            : base("TeduShop")
         {
             this.Configuration.LazyLoadingEnabled = true;
         }
