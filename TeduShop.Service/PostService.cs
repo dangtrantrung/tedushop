@@ -56,7 +56,7 @@ namespace TeduShop.Service
 
         public IEnumerable<Post> GetAllPaging(int page, int pagesize, out int totalRow)
         {
-            return _postRepository.GetMultiPaging(x => x.Status, out totalRow, pagesize, pagesize);
+            return _postRepository.GetMultiPaging(x => x.Status, out totalRow, page, pagesize);
 
         }
 
@@ -68,7 +68,7 @@ namespace TeduShop.Service
         public IEnumerable<Post> GetAllByTagPaging(int tag, int pagesize, out int totalRow)
         {
             //TODO: Select all post by tag
-            return _postRepository.GetMultiPaging(x => x.Status, out totalRow,pagesize,pagesize);
+            return _postRepository.GetMultiPaging(x => x.Status, out totalRow,page,pagesize);
         }
 
         public void SaveChanges()
