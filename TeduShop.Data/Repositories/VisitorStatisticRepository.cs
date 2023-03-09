@@ -1,15 +1,19 @@
 ﻿using TeduShop.Data.Infrastructure;
 using TeduShop.Model.Models;
 
+using TeduShop.Data.Infrastructure;
+using TeduShop.Model.Models;
+
 namespace TeduShop.Data.Repositories
 {
-    public interface IVisitorStatisticRepository : IRepository<VisitorStatistic>
+    public interface IVisistorStatisticRepository : IRepository<VisistorStatistic>
     {
     }
 
-    public class VisitorStatisticRepository : RepositoryBase<VisitorStatistic>, IVisitorStatisticRepository
+    public class VisistorStatisticRepository : RepositoryBase<VisistorStatistic>, IVisistorStatisticRepository
     {
-        public VisitorStatisticRepository(IDbFactory dbFactory) : base(dbFactory)
+        public VisistorStatisticRepository(IDbFactory dbFactory)
+            : base(dbFactory)
         {
         }
     }

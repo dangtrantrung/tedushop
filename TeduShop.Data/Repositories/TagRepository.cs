@@ -1,4 +1,4 @@
-﻿ using TeduShop.Data.Infrastructure;
+﻿using TeduShop.Data.Infrastructure;
 using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Repositories
@@ -9,7 +9,8 @@ namespace TeduShop.Data.Repositories
 
     public class TagRepository : RepositoryBase<Tag>, ITagRepository
     {
-        public TagRepository(IDbFactory dbFactory) : base(dbFactory)
+        public TagRepository(IDbFactory dbFactory)
+            : base(dbFactory)
         {
         }
     }
